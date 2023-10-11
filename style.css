@@ -1,0 +1,358 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* text-transform: capitalize; */
+}
+
+html{
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.container{
+    width: calc(100vw - 200px);
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nav-bar{
+    width: 95%;
+    height: 70px;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-between;
+    position: fixed;
+    margin-left: 50px;
+}
+
+.menu-list i {
+    font-size: 1.6rem;
+    color: black;
+    margin: 15px 0px 1px 20px;
+    padding: 16px;
+    height: 70%;
+    width: 50px;
+}
+
+.menu-item{
+    height: 100vh;
+    width: 0;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 2rem;
+    box-shadow: 44px 0px 20px 10px #00000078;
+}
+
+.menu-list a i:hover{
+    background-color: rgb(64, 57, 57);
+    color: white;
+}
+
+.menu-item ul{
+    margin-left: -60px;
+}
+
+.menu-item ul li, .menu-item ul li a{
+    list-style: none;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    display: block;
+    width: 100%;
+}
+
+
+.menu-item ul li:hover{
+    background-color: gainsboro;
+}
+
+.nav-bar .my-food, .nav-bar .mail{
+    margin-top: 10px;
+    padding: 16px;
+
+}
+
+.nav-bar .mail {
+    margin-right: 15px;
+}
+
+.box{
+    height: 70px;
+    width: 95%;
+}
+
+.container .main-image{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.container .image-container{
+    height: 600px;
+    width: 100%;
+    /* border: 2px solid red; */
+    margin-top: 0px;
+    display: flex;
+    gap: 10px;
+    background-color: #fff;
+}
+
+.img{
+    height: 100%;
+    width: 25%;
+    /* border: 2px solid green; */
+}
+
+.img img{
+    height: 70%;
+    width: 100%;
+}
+
+.img h2{
+    font-size: 1.7rem;
+    margin: 20px 10px 20px 10px;
+}
+
+.img p{
+    text-align: center;
+    margin-top: 20px;
+    margin: 0 10px 0 10px;
+    font-size: 1.2rem;
+}
+
+.container .scroll-bar{
+    margin-top: 50px;
+    height: 26px;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.scroll-bar span, .scroll-bar a i{
+    height: 25px;
+    width: 30px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 2px 4px 0;
+}
+
+.container .scroll-bar .scroll a{
+    padding: 2px 17px 5px 13px;
+}
+
+.container .scroll-bar .scroll a:hover, .scroll-bar a i:hover{
+    background-color: black;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.container .scroll-bar .active a{
+    background-color: black;
+    color: #fff;
+}
+
+.container .scroll-bar .active a:hover{
+    background-color: gainsboro;
+    color: rgb(0, 0, 0);
+}
+
+
+.horizontal-ruler-first{
+    margin: 40px 15px 0 15px;
+    border: 1px solid rgb(152, 139, 139);
+}
+
+.about-me{
+    height: 800px;
+    width: 80%;
+    /* border: 2px solid red;   */
+    margin: 20px auto;
+    text-align: center;
+}
+
+.about-me h3{
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: rgba(81, 80, 80, 0.812);
+}
+
+.about-me img{
+    margin-top: 30px;
+}
+
+.about-me .first, .about-me .second{
+    margin-top: 20px;
+}
+
+.about-me .second{
+    margin: 10px 20px;
+}
+
+.horizontal-ruler-second{
+    margin: 40px 15px 0 15px;
+    border: 1px solid rgb(152, 139, 139);
+}
+
+footer{
+    margin-top: 40px;
+    height: 300px;
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .section-1{
+    height: 100%;
+    width: 31%;
+    margin: 40px;
+}
+
+footer .section-1 p{
+    margin-top: 20px;
+    line-height: 20px;
+}
+
+footer .section-1 p a{
+    text-decoration: underline;
+}
+
+footer .section-2 img{
+    height: 90px;
+    width: 110px;
+    padding: 10px;
+}
+footer .section-2{
+    width: 400px;
+    margin: 40px;
+}
+
+footer .section-2-1, footer .section-2-2{
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+    /* border: 2px solid green; */
+    position: relative;
+}
+
+footer .section-2-1 h3, footer .section-2-2 h3{
+    margin-top: 20px;
+}
+
+footer .section-2-1 p, footer .section-2-2 p{
+    margin-top: 40px;
+    position: absolute;
+    left: 119px;
+}
+
+.horizontal-ruler-third{
+    border: 1px solid rgb(152, 139, 139);
+}
+
+footer .section-2-2{
+    margin-top: 0px;
+}
+
+footer .section-2-1:hover, footer .section-2-2:hover{
+    background-color: gainsboro;
+}
+
+.section-3{
+    margin: 40px;
+    width: 33%;
+}
+
+.section-3 h2{
+    margin-bottom: 20px;
+}
+
+.section-3 .tags{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.section-3 .tags .item{   
+    height: 30px;
+    width: auto;
+    padding: 8px;
+    background-color: rgb(92, 92, 92);
+    color: white;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom:16px;
+    
+}
+
+.section-3 .tags .top{
+    background-color: black;
+    height: 35px;
+    padding: -20px 0 0 0;
+}
+
+
+/* Responsiveness */
+
+@media screen and (max-width: 768px) {
+    .container {
+      gap: 10px; 
+    }
+
+    .menu-list i {
+      margin: 15px 20px; 
+    }
+
+    .menu-item ul {
+      margin-left: 0;
+    }
+
+    .menu-item ul li,
+    .menu-item ul li a {
+      padding: 10px;
+    }
+
+    .container .main-image .image-container {
+      flex-direction: column;
+    }
+
+    .img {
+      width: 100%;
+      margin: 0 0 20px;
+    }
+
+    .scroll-bar {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .scroll-bar span,
+    .scroll-bar a i {
+      height: auto;
+      width: auto;
+      margin: 5px;
+    }
+
+    .section-1,
+    .section-2,
+    .section-3 {
+      width: 100%;
+    }
+  }
